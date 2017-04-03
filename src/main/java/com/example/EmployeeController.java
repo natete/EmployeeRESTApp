@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.rest.EmployeeDAO;
 import com.example.rest.EmployeeListDAO;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.Optional;
  */
 @RestController
 @CrossOrigin
+@EnableAutoConfiguration
 @RequestMapping("/employees")
 public class EmployeeController {
 
