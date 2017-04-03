@@ -1,7 +1,7 @@
 var app = angular.module('demo', [])
 
     .controller('Employees', function ($scope, $http) {
-        $scope.urlService = "/employees";
+        $scope.urlService = "https://pacific-wave-40700.herokuapp.com/employees";
         $scope.showListEmployes = true;
         $scope.showPhoto = false;
         $scope.photo = false;
