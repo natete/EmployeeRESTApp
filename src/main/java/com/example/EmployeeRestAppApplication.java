@@ -20,7 +20,7 @@ public class EmployeeRestAppApplication {
 
 	public static void main(String[] args) {
 		myProps.setProperty("server.address", host.orElse("localhost"));
-		myProps.setProperty("server.port", port.orElse("8080"));
+		myProps.setProperty("server.port", port.orElse("443"));
 		
 		SpringApplication app = new SpringApplication(EmployeeRestAppApplication.class);
 		app.setDefaultProperties(myProps);
